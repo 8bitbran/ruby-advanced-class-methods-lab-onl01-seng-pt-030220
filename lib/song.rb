@@ -38,7 +38,9 @@ class Song
     
     data = row.split(" - ")
     song_name = data[0]
-    artist_name = data[1].gsub(".")
+    artist_name = data[1].gsub(".mp3", "")
+    
+    
   end
   
   def self.destroy_all 
