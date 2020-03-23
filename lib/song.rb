@@ -38,7 +38,7 @@ class Song
    
    data = row.split(" - ")
    artist_name = data[0]
-   song_name = data[1]
+   song_name = data[1].delete!
    
    song = self.new 
    song.name = song_name 
